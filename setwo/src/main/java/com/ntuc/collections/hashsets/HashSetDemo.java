@@ -23,3 +23,7 @@ public class HashSetDemo {
 
     }
 }
+
+// sets are unordered and no index available for elements
+// no duplicates allowed
+// Generic and use <>
