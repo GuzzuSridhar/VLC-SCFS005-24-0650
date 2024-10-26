@@ -28,6 +28,7 @@ public class ThrowsDemo {
     // }
     // }
 
+    // propogating the error handling further by adding the throws exception
     void testThrows() throws AgeBoundException {
         testAge();
     }
