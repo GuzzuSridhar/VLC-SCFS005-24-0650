@@ -18,4 +18,15 @@ public class SimpleAssert {
  * Enable assertions on cmd line
  * use the java -ea
  * 
+ * Enable in VsCode
+ * use the launch.json
+ * {
+ * "type": "java",
+ * "name": "SimpleAssert",
+ * "request": "launch",
+ * "mainClass": "com.ntuc.assertions.SimpleAssert",
+ * "projectName": "setwo",
+ * "vmArgs": "-ea"
+ * }
+ * 
  */
