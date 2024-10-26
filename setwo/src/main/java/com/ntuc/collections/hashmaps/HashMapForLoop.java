@@ -1,12 +1,10 @@
 package com.ntuc.collections.hashmaps;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
-public class HashMapDemo {
+public class HashMapForLoop {
     public static void main(String[] args) {
-
         HashMap<Integer, String> nameList = new HashMap<>();
 
         // add values to the Map
@@ -16,14 +14,8 @@ public class HashMapDemo {
         nameList.put(4, "Anna");
         nameList.put(4, "Bill"); // will override the earlier record
 
-        // get the iterator on the map
-        Iterator<Map.Entry<Integer, String>> iterator = nameList.entrySet().iterator();
-
-        while (iterator.hasNext()) {
-            Map.Entry<Integer, String> e = iterator.next();
-            System.out.println(e.getKey() + "- " + e.getValue());
+        for (Map.Entry<Integer, String> e : nameList.entrySet()) {
+            System.out.println(e.getKey() + " - " + e.getValue());
         }
-
     }
-
 }
