@@ -21,14 +21,16 @@ public class IteratorDemo {
             String x = iterator.next();
             System.out.println(x);
         }
+        Iterator<String> itr = names.iterator();
 
         // remove an element using iterator
-        while (iterator.hasNext()) {
-            String x = iterator.next();
+        while (itr.hasNext()) {
+            String x = itr.next();
             if ("Jill".equals(x)) {
-                iterator.remove();
+                itr.remove();
             }
         }
+        System.out.println(names);
     }
 }
 
