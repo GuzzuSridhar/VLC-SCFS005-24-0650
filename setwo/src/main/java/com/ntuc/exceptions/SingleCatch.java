@@ -20,7 +20,7 @@ public class SingleCatch {
             System.out.println(res);
             // handle more than one exception in a single catch statement
         } catch (ArithmeticException | InputMismatchException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e);
         } finally {
             System.out.println("Closing Scanner");
             scan.close();
