@@ -19,5 +19,5 @@ public class SimpleException {
 }
 
 /*
- * to close resources
+ * finally block is used to close resources
  */
