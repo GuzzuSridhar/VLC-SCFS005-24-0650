@@ -7,12 +7,4 @@ public class TestArgs {
         }
     }
 
-    // void sum() {
-    // int i = 10, j = 20;
-    // System.out.println(i + j);
-    // }
-    // void diff() {
-    // int i = 10, j = 20;
-    // System.out.println(i - j);
-    // }
 }
