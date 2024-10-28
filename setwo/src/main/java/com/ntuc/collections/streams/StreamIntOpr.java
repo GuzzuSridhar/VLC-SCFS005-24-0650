@@ -39,3 +39,6 @@ public class StreamIntOpr {
 
     }
 }
+
+// intermediate operations can be chained
+// cannot be the last operation of a stream

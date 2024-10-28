@@ -53,3 +53,6 @@ public class StreamTermOpr {
  * the elements match, false otherwise
  * 
  */
+
+// terminal operators cannot be chained
+// always is the last operation and only one per stream
