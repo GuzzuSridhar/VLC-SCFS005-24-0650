@@ -25,6 +25,17 @@ public class StreamIntOpr {
         strList.stream().map(s -> s.toUpperCase()).forEach(System.out::println);
 
         // filter the list based on a condition
+        System.out.println("------------filter----------------");
+        numList.stream().distinct().filter(a -> a % 2 == 0).forEach(System.out::println);
+        strList.stream().filter(a -> a.length() == 3).forEach(System.out::println);
+
+        // skip specific # of elments
+        System.out.println("------------skip----------------");
+        strList.stream().skip(2).forEach(System.out::println);
+
+        // limit the size of returned elements
+        System.out.println("------------limit----------------");
+        strList.stream().limit(3).forEach(System.out::println);
 
     }
 }
