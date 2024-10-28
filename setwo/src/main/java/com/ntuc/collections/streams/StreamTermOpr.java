@@ -34,11 +34,15 @@ public class StreamTermOpr {
         res = numList.stream().reduce(1, (x, y) -> x * y);
         System.out.println("Multiplying Elements:" + res);
 
+        // get sum of all even numbers
+        res = numList.stream().filter(n -> n % 2 == 0).reduce(0, Integer::sum);
+        System.out.println(res);
+
     }
 }
 
 /*
- * Method Description Returns
+ * Method - Description - Returns
  * allMatch - Checks if all elements match a condition - true if all elements
  * match,
  * false otherwise
