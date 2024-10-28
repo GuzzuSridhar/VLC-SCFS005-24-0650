@@ -16,7 +16,7 @@ public class StreamIntOpr {
         strList.stream().sorted().forEach(System.out::println);
 
         // chain the operators
-        System.out.println("------------distict and sorted----------------");
+        System.out.println("------------distinct and sorted----------------");
         numList.stream().distinct().sorted().forEach(System.out::println);
 
         // apply experssion on each element
