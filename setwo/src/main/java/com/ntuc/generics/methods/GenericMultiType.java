@@ -16,12 +16,13 @@ public class GenericMultiType {
         printPair(1, "Apple");
         printPair(2, "Mango");
         printPair("String", "Grapes");
+        printPair("String", "Grapes");
 
         printP("Name", "Alex");
         printP("City", "Singapore");
         printP("NRIC", "ABC0011");
         printP("Ten", true);
-        printP("Ten", 10);
+        printP(10, 10);
 
     }
 }
