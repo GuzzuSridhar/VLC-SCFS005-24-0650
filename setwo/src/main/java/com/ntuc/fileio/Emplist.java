@@ -19,7 +19,6 @@ public class Emplist {
             for (String string : empList) {
                 writer.write(LocalDateTime.now() + "- " + string);
                 writer.newLine();
-                ;
             }
         } catch (IOException e) {
         }
