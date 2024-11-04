@@ -8,3 +8,5 @@ This is a sample text written from java io
 This is a some more text written from java io 
 This is a sample text written from java io 
 This is a some more text written from java io 
+This is written using the Buffered writerThis is written using the Buffered writerThis is written using the Buffered writer
+This is written using the Buffered writer
