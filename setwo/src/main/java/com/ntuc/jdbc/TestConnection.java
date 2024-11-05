@@ -15,7 +15,8 @@ public class TestConnection {
     }
 
     public static Connection getMyConnection(String uname, String pwd) {
-        try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcdata", uname, pwd)) {
+        try {
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcdata", uname, pwd);
             assert con != null : "No Connection";
             return con;
         } catch (SQLException e) {
