@@ -1,0 +1,11 @@
+** Log levels
+
+Severe -- Critical Errors
+Warning -- Potential Issue
+Info -- default -- General Information
+Config -- Configuration details
+Fine -- Detailed Information
+Finer -- Grnaualted information
+Finest -- Detailed Information
+All -- Enable all levels
+off -- disable all logging
