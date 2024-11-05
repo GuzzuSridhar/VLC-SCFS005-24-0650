@@ -14,6 +14,5 @@ public class StoreObject {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-
     }
 }
