@@ -14,6 +14,7 @@ public class InsertData {
             System.out.println(sql);
             int res = stmt.executeUpdate(sql);
             System.out.println(res + " rows inserted");
+            // stmt.execute(sql); // the # records affected will not be available
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
