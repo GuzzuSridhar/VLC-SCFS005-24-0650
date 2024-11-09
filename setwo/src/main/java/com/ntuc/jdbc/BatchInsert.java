@@ -20,6 +20,7 @@ public class BatchInsert {
                 input.nextLine();
                 System.out.print("Enter the Employee Name: ");
                 String name = input.nextLine();
+
                 String sql = "insert into emp(empno,ename) values("
                         + num
                         + " ,'"
