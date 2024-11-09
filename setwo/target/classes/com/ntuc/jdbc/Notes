@@ -13,4 +13,4 @@
 execute -- can be used for all sql statement tyeps (DDL, DML, DQL) -- Returns boolean
 executeUpdate -- can be used on DML statements primarily and also on DDL -- returns a number (int)
 executeQuery -- can be used only for select statements
-exeuteBatch -- can be used only for DML statements
+exeuteBatch -- can be used only for DML statements -- returns a int[]
