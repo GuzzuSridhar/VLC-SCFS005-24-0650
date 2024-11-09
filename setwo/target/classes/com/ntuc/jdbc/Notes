@@ -1,0 +1,16 @@
+# JDBC is a SE API that allows developer to establish connction to a Database
+
+# this api gives complete control on the SQL statements
+
+#Steps to Connect
+
+1. Coonection object
+2. Statement Object
+3. Execute the Sql statement on the Statement object
+
+# Statement class
+
+execute -- can be used for all sql statement tyeps (DDL, DML, DQL) -- Returns boolean
+executeUpdate -- can be used on DML statements primarily and also on DDL -- returns a number (int)
+executeQuery -- can be used only for select statements
+exeuteBatch -- can be used only for DML statements
