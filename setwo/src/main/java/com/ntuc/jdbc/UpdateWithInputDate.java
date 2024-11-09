@@ -18,8 +18,10 @@ public class UpdateWithInputDate {
             System.out.print("Enter the Employee Number: ");
             int num = input.nextInt();
             input.nextLine();
+
             System.out.print("Enter the Employee Name: ");
             String name = input.nextLine();
+
             System.out.print("Enter the Employee' Date of Joining (YYYY-MM-DD): ");
             String doj = input.nextLine();
             LocalDate d = LocalDate.parse(doj, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
@@ -36,6 +38,7 @@ public class UpdateWithInputDate {
 
             int res = stmt.executeUpdate(sql);
             System.out.println(res + " rows updated");
+
             stmt.close();
             conn.close();
             input.close();
