@@ -16,11 +16,15 @@ public class SelectRecords {
         Connection conn;
         try {
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcdata", "root", "pass");
-            PreparedStatement stmt = conn.prepareStatement("select * from emp where empno = ?");
+            PreparedStatement stmt = conn.prepareStatement("select * from emp where empno = ? or ename = ?");
             Scanner scan = new Scanner(System.in);
             System.out.print("Enter a Employee number: ");
             int num = scan.nextInt();
+            scan.nextLine();
+            System.out.print("Enter a Employee name: ");
+            String name = scan.nextLine();
             stmt.setInt(1, num);
+            stmt.setString(2, name);
             ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
                 System.out.print(rs.getInt(1) + " - ");
