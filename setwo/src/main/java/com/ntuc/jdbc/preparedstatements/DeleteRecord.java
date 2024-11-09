@@ -17,6 +17,10 @@ public class DeleteRecord {
             stmt.setInt(1, num);
             int res = stmt.executeUpdate();
             System.out.println(res + " rows deleted");
+            stmt.close();
+            conn.close();
+            scan.close();
+
         } catch (SQLException e) {
             e.getMessage();
         }
