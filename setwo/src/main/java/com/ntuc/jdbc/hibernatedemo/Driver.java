@@ -1,8 +1,11 @@
 package com.ntuc.jdbc.hibernatedemo;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.SelectionQuery;
 
 public class Driver {
     public static void main(String[] args) {
@@ -52,6 +55,16 @@ public class Driver {
         session.getTransaction().commit();
         session.close();
 
+        // list all Students
+        session = sessionFactory.openSession();
+        session.beginTransaction();
+        SelectionQuery<Student> query = session.createSelectionQuery("from Student", Student.class);
+        // SelectionQuery<Student> query = session.createSelectionQuery("select s from
+        // Student s where s.name = :name", Student.class);
+        List<Student> students = query.getResultList();
+        for (Student s : students) {
+            System.out.println(s.getName());
+        }
         sessionFactory.close();
     }
 
