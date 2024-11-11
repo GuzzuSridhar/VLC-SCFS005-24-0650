@@ -33,7 +33,6 @@ public class IsDirtyDemo {
     }
 
     public static void insertRec(Connection conn) {
-
         try {
             Statement stmt = conn.createStatement();
             // stmt.executeUpdate("insert into emp(empno,ename) values(1011,'TestEmployee')
