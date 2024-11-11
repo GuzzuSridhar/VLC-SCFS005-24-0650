@@ -17,8 +17,8 @@ public class SetAutoCommitFlase {
 
             Statement stmt = conn.createStatement();
             int res = stmt.executeUpdate("insert into emp(empno,ename) values(1010,'TestEmployee') ");
-            System.out.println(res + " Records Inserted");
             conn.commit();
+            System.out.println(res + " Records Inserted");
             stmt.close();
             conn.close();
         } catch (SQLException e) {
