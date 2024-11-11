@@ -13,7 +13,6 @@ public class IsDirtyDemo {
         String url = "jdbc:mysql://localhost:3306/jdbcdata";
         String user = "root";
         String pass = "pass";
-
         try {
             Connection conn = DriverManager.getConnection(url, user, pass);
             conn.setAutoCommit(false);
@@ -29,7 +28,6 @@ public class IsDirtyDemo {
         } catch (SQLException e) {
             e.getMessage();
         }
-
     }
 
     public static void insertRec(Connection conn) {
