@@ -1,0 +1,27 @@
+1. Create a folder named "ModularApp"
+
+2. navigate to the folder "ModularApp" and create a folder named "mymodule"
+
+3. within the mymodule folder, create 2 java files named
+   HelloWorld.java
+   module-info.java
+
+4. compile using 
+   javac -d out mymodule/*.java
+
+D:\ModularApp>tree /F
+Folder PATH listing for volume Work
+Volume serial number is 7896-95EA
+D:.
+├───mymodule
+│       HelloWorld.java
+│       module-info.java
+│
+└───out
+    │   module-info.class
+    │
+    └───mymodule
+            HelloWorld.class
+
+5. Run using the command 
+   java -p out -m mymodule/mymodule.HelloWorld
