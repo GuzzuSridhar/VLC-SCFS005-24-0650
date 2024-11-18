@@ -40,7 +40,7 @@ public class ConcurrentExample {
 
         Callable<Integer> task4 = () -> {
             int sum = 0;
-            for (int i = 21; i <= 30; i++) {
+            for (int i = 31; i <= 40; i++) {
                 sum += i;
                 Thread.sleep(100); // Simulate a delay
             }
@@ -61,7 +61,7 @@ public class ConcurrentExample {
             System.out.println("Result of Task 4: " + result4.get());
 
             // Calculate the total sum
-            int totalSum = result1.get() + result2.get() + result3.get();
+            int totalSum = result1.get() + result2.get() + result3.get() + result4.get();
             System.out.println("Total Sum: " + totalSum);
         } catch (Exception e) {
             e.printStackTrace();
